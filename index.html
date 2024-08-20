@@ -9,66 +9,81 @@
     <meta name="author" content="Generation Brasil">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Universe</title>
 </head>
 
 <body>
 
-    <header>
-        <div id="header_content">
+    <header class="menu_container">
+        <div id="header_content" class="menu_content">
             <div id="titulo">
-                <a href="#">Universe</a>
+                <a href="#">UNIVERSE</a>
             </div>
-            <div id="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#contact">Contate-me</a></li>
+            <div id="menu" class="flex">
+                <nav>
+                <ul class="flex menu_lista">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">SOBRE</a></li>
+                    <li><a href="#contact">CONTATE-ME</a></li>
                 </ul>
                 </nav>
             </div>
         </div>
     </header>
+    <main>
+        <section id="home">
+            <article id="home_texto">
+                <h4>Bem-vindo ao Novo Universo</h4>
+                <h1>Mundos diferentes para pessoas diferentes</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni
+                    quisquam</p>
+                <a class="botao" target="_blank" href="https://github.com/conteudoGeneration" alt="Github da Generation Brasil">
+                    Explorar
+                </a>
+            </article>
+            <article id="home_imagem">
+                <img src="./assets/img/astronauta.png" alt="Capacete de Astronauta Animado" width="300">
+            </article>
+        </section>
 
         <section id="about">
 
-            <img src="assets/img/user_01.svg" alt="Foto do Perfil do Github" width="450px">
-
-
-            <article id="sobre_texto">
-
+            <div id="about_imagem">
+                <img src="assets/img/user_01.png" alt="Foto do Perfil do Github" width="450px">
+            </div>
+        
+            <div id="sobre_texto">
+        
                 <h1>Sobre mim</h1>
-
+        
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Quibusdam odit voluptates incidunt inventore rem error harum
                     blanditiis accusamus vitae, minus fugit consequatur?
                     Dolorum maiores magni deleniti modi sit laudantium totam!
                 </p>
-
+        
                 <div id="sobre_github">
-
-                    <a target="_blank" href="https://github.com/conteudoGeneration">Github</a>
+                    <a class="botao" target="_blank" href="https://github.com/DanNilloOli">Github</a>
                     <p>200 Seguidores</p>
                     <p>100 Repositórios</p>
-
                 </div>
-
-            </article>
-
+        
+            </div>
+        
         </section>
+        
 
-        <!--  -->
+        <section id="contact" class="flex contato_container">
 
-        <section id="contact">
-
-            <article id="redes_sociais">
+            <article id="redes_sociais" class="flex contato_content">
 
                 <h4>Contate-me</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quod error veniam in voluptatem magni quisquam</p>
 
-                <div id="icones_redes_sociais">
+                <div id="icones_redes_sociais" class="flex social_container">
                     <a href="">
                         <img src="" alt="" width="">:
                         <img src="assets/img/linkedin.svg" alt="LinkedIn" />
@@ -83,7 +98,6 @@
 
             </article>
             <form action="" method="POST">
-
 
                 <label for="name">Nome: </label>
                 <input id="name" type="text" name="name" placeholder="Digite seu nome">
@@ -101,6 +115,7 @@
                 <textarea id="message" name="message" placeholder="Digite sua message"></textarea>
 
                 <button type="submit">Enviar</button>
+                
             </form>
         </section>
 
@@ -109,7 +124,7 @@
     </main>
 
     <footer>
-        <p>Feito com ❤️ por Generation Brasil - 2024</p>
+        <p>Feito com ❤️ por Danillo Oliveira - 2024</p>
     </footer>
 
 </body>
