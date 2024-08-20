@@ -166,6 +166,7 @@ h3{
     align-items: center;
     padding: 50px;
     text-align: left;
+    margin-left: -80px;
 }
 
 #about_imagem {
@@ -173,6 +174,7 @@ h3{
 }
 
 #about_imagem img {
+    width: 700px;
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -210,3 +212,77 @@ h3{
         button:active {
             transform: scale(0.98)}
         }
+
+.contato_container{
+        max-width: 1120px;
+        margin: auto;
+        height: 100vh;
+        display: grid;
+        padding: 0 32px;
+        grid-template-columns: repeat(auto-fill, 545x);
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+}
+
+.contato_content{
+    flex-direction: column;
+    margin: 65px 0px 0px 0px;
+    font-size: 20px;
+}
+
+.contato_content p {
+    display: block;
+    text-align: justify;
+}
+
+.contato_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+
+    margin: 64px 0 0 0;
+    font-size: 20px;
+}
+
+.social_container {
+    display: flex;
+    justify-content: space-evenly; 
+    margin: 32px 0 0 0;
+    width: 320px;
+}
+
+.social_icon:hover {  
+    filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(5000%) hue-rotate(260deg) brightness(90%) contrast(100%);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0px 0px 0px;
+    padding: 24px;
+
+}
+
+form label{
+    font-size: 20px;
+}
+
+form input, textarea{
+    margin: 8px 0 16px;
+    padding: 8px;
+    border-radius: 14px;
+    border: none;
+    font-weight: bold;
+
+}
+
+form button{
+    background-color: var(--purple-200);
+    border-radius: 10px;
+}
+
+form button a:hover{
+    color: var(--purple-800);
+}
