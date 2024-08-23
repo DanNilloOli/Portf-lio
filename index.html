@@ -97,25 +97,29 @@
                 </div>
 
             </article>
-            <form action="" method="POST">
+            <form id="formulario" action="https://formsubmit.co/el/xewowe" method="POST">
 
-                <label for="name">Nome: </label>
-                <input id="name" type="text" name="name" placeholder="Digite seu nome">
+                <input type="hidden" name="_next" value="https://dannillooli.github.io/Portfolio/sucess.html">
+                <input type="hidden" name="_captcha" value="false">
+
+                <label for="nome">Nome: </label>
+                <input id="name" type="text" name="name" placeholder="Digite seu nome" >
                 <span id="txtNome"></span>
 
-                <label for="email">E-mail: </label>
-                <input id="email" type="text" name="email" placeholder="Digite seu email">
+                <label for="email">Email: </label>
+                <input id="email" type="text" name="email" placeholder="Digite seu email" >
                 <span id="txtEmail"></span>
 
                 <label for="subject">Assunto: </label>
-                <input id="subject" type="text" name="subject" placeholder="Digite o título da message">
+                <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" >
                 <span id="txtSubject"></span>
 
                 <label for="message">Mensagem: </label>
-                <textarea id="message" name="message" placeholder="Digite sua message"></textarea>
+                <textarea id="message" name="message" placeholder="Digite sua mensagem" ></textarea>
+                <span id="txtMensagem"></span>
 
-                <button type="submit">Enviar</button>
-                
+                <button class="botao" type="submit">Enviar</button>
+
             </form>
         </section>
 
@@ -126,6 +130,7 @@
     <footer>
         <p>Feito com ❤️ por Danillo Oliveira - 2024</p>
     </footer>
+    <script src="./script.js"></script>
 
 </body>
 
